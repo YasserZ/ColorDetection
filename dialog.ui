@@ -6,139 +6,107 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>253</width>
-    <height>223</height>
+    <width>560</width>
+    <height>375</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QPushButton" name="ProcessButton">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>254</width>
-     <height>223</height>
+     <x>20</x>
+     <y>280</y>
+     <width>91</width>
+     <height>23</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout_7">
-    <item>
-     <widget class="QPushButton" name="ChooseButton">
-      <property name="text">
-       <string>Choose Image</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout_6">
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_5">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_5">
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_4">
-            <item>
-             <widget class="QLabel" name="label_4">
-              <property name="text">
-               <string>Red</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_2">
-              <property name="text">
-               <string>Green</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_3">
-              <property name="text">
-               <string>Blue</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_3">
-            <item>
-             <widget class="QSpinBox" name="RedSpinBox">
-              <property name="maximum">
-               <number>255</number>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QSpinBox" name="GreenSpinBox">
-              <property name="maximum">
-               <number>255</number>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QSpinBox" name="BlueSpinBox">
-              <property name="maximum">
-               <number>255</number>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <widget class="QPushButton" name="ProcessButton">
-          <property name="text">
-           <string>Process Image</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_4">
-        <item>
-         <widget class="QPushButton" name="ShowProcessedButton">
-          <property name="text">
-           <string>Show Processed</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="CancelButton">
-          <property name="text">
-           <string>Cancel</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-   </layout>
+   <property name="text">
+    <string>Process Image</string>
+   </property>
   </widget>
-  <zorder>lineEdit</zorder>
-  <zorder>lineEdit_2</zorder>
-  <zorder>lineEdit_3</zorder>
-  <zorder>label_2</zorder>
-  <zorder>label_3</zorder>
-  <zorder>label_4</zorder>
-  <zorder>ShowProcessedButton</zorder>
-  <zorder>ShowOriginalButton</zorder>
-  <zorder>CancelButton</zorder>
-  <zorder>label_3</zorder>
-  <zorder></zorder>
-  <zorder>ProcessButton</zorder>
-  <zorder>ChooseButton</zorder>
-  <zorder>RedTextField</zorder>
-  <zorder>label_3</zorder>
-  <zorder>label_2</zorder>
-  <zorder>label_4</zorder>
-  <zorder>GreenTextField</zorder>
-  <zorder>BlueTextField</zorder>
-  <zorder></zorder>
+  <widget class="QPushButton" name="ChooseButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Choose Image</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CancelButton">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>280</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SelectColorButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select Color</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="MinDistSlider">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>22</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ImageLabel">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>20</y>
+     <width>371</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MinDistLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>250</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Minimum distance</string>
+   </property>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

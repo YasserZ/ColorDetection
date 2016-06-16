@@ -25,6 +25,10 @@ private slots:
 
     void on_ShowOriginalButton_clicked();
 
+    void on_SelectColorButton_clicked();
+
+    void on_MinDistSlider_sliderMoved(int position);
+
 private:
     ColorDetectorController* colorDetect;
     Ui::Dialog *ui;
